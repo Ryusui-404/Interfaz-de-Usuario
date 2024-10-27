@@ -273,7 +273,7 @@ if st.session_state.logged_in:
     user = st.session_state.user
     if isinstance(user, clase_alumno.Alumno):
         st.header("Interfaz de Alumno")
-        st.success(f"Bienvenido {user.nombre}")
+        st.success(f"Has iniciado sesion como {user.nombre}")
 
         horario_clase()
 
